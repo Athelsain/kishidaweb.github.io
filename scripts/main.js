@@ -5,7 +5,7 @@ myImage.onclick = function() {
     if(mySrc === 'images/singham.jpeg') {
       myImage.setAttribute ('src','images/singham2.jpeg');
     } else {
-      myImage.setAttribute ('src','images/firefox-icon.png');
+      myImage.setAttribute ('src','images/singham.jpeg');
     }
 } 
 var myButton = document.querySelector('button');
@@ -13,7 +13,7 @@ var myHeading = document.querySelector('h1');
 function setUserName() {
   var myName = prompt('Please enter your name.');
   localStorage.setItem('name', myName);
-  myHeading.textContent = 'Mozilla is cool, ' + myName;
+  myHeading.textContent = 'Welcome, ' + myName;
 }
 if(!localStorage.getItem('name')) {
   setUserName();
